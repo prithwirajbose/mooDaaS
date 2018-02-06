@@ -1,0 +1,30 @@
+{
+    "name": "mooDaaS",
+    "version": "0.2.0",
+    "description": "mooDaaS is a simple Database as a Service system. Store and retrieve structured data using this simple, lightweight and cloud supported platform",
+    "main": "moodaas-server.js",
+    "scripts": {
+        "start": "node moodaas-server.js"
+    },
+    "dependencies": {
+        "express": "^4.13.3",
+        "sqlite3": "3.1.13"
+    },
+    "engines": {
+        "node": "4.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/prithwirajbose/mooDaaS"
+    },
+    "keywords": [
+        "daas",
+        "moodaas",
+        "database as a service"
+    ],
+    "author": "Prithwiraj Bose",
+    "contributors": [
+        "Prithwiraj Bose <sribasu@gmail.com> (http://sribasu.com)"
+    ],
+    "license": "MIT"
+}
