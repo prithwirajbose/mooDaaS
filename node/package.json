@@ -1,5 +1,5 @@
 {
-    "name": "mooDaaS",
+    "name": "moodaas",
     "version": "1.0.0",
     "description": "mooDaaS is a simple Database as a Service system. Store and retrieve structured data using this simple, lightweight and cloud supported platform",
     "main": "server.js",
@@ -18,7 +18,13 @@
         "debug": "~2.6.0",
         "express": "~4.14.1",
         "jade": "~1.11.0",
-        "serve-favicon": "~2.3.2"
+        "serve-favicon": "~2.3.2",
+        "dotenv": "~5.0.0",
+        "path": "~0.12.7",
+        "bluebird": "~3.5.1",
+        "promise": "8.0.1",
+        "fs-extra": "~5.0.0",
+        "sqlite-sync": "~0.3.6"
     },
     "engines": {
         "node": "4.0.0"

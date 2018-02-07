@@ -13,9 +13,17 @@ routes.post('/alias', function(req, res) {
     return aliasController.createUpdate(req, res);
 });
 
+routes.post('/data', function(req, res) {
+    return dataController.createUpdate(req, res);
+});
+
+routes.get('/data', function(req, res) {
+    return dataController.list(req, res);
+});
+
 
 routes.all('/*', function(req, res) {
-    return errorHandler.appError(req, res, '006')
+    return errorHandler.appError(req, res, '006');
 });
 
 

@@ -1,11 +1,16 @@
 const uuidv1 = require('uuid/v1');
 var _ = require('../libs/lodash.min.js');
 var errorHandling = require('../libs/error-handler.js');
+require('dotenv').config();
+const path = require('path');
 
 module.exports.initRequest = function(req, res, next) {
     var uuid = uuidv1();
     _.set(req, 'requestId', uuid);
     res.setHeader('Content-Type', 'application/json');
+    _.set(process.env, 'APP.NODE_ROOT_PATH', path.dirname(__dirname));
+    var tempDbPath = _.get(process.env, 'APP.DB_MAIN_FILE_PATH');
+    _.set(process.env, 'APP.DB_MAIN_FILE_PATH', path.join(_.get(process.env, 'APP.NODE_ROOT_PATH'), tempDbPath));
     next();
 }
 
