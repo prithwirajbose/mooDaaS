@@ -1,14 +1,24 @@
 {
     "name": "mooDaaS",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "description": "mooDaaS is a simple Database as a Service system. Store and retrieve structured data using this simple, lightweight and cloud supported platform",
-    "main": "moodaas-server.js",
+    "main": "server.js",
     "scripts": {
-        "start": "node moodaas-server.js"
+        "start": "node server.js"
     },
     "dependencies": {
-        "express": "^4.13.3",
-        "sqlite3": "3.1.13"
+        "sqlite3": "3.1.13",
+        "uuid": "3.2.1",
+        "body-parser": "^1.17.2",
+        "cors": "^2.8.3",
+        "express-validator": "^3.2.0",
+        "request": "^2.81.0",
+        "fast-xml-parser": "^2.6.0",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.0",
+        "express": "~4.14.1",
+        "jade": "~1.11.0",
+        "serve-favicon": "~2.3.2"
     },
     "engines": {
         "node": "4.0.0"

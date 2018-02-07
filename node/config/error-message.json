@@ -1,0 +1,8 @@
+{
+    "001": { "message": "An error has occured. Please try again.", "status": 500 },
+    "002": { "message": "Request must be a valid JSON.", "status": 500 },
+    "003": { "message": "A validation error has occured.", "status": 400 },
+    "004": { "message": "An unhandled error has occured. Please contact support.", "status": 500 },
+    "005": { "message": "Request attributes not allowed - {{0}}", "status": 500 },
+    "006": { "message": "Requested service is not available", "status": 404 }
+}
